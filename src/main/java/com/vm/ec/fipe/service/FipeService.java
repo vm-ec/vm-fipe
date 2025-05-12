@@ -28,4 +28,20 @@ public class FipeService {
                 .block(); // Blocking for simplicity; avoid in reactive applications
     }
 
+    public String fetchAllModels() {
+        return webClient.get()
+                .uri(fipeApiConstants.GET_MODELS_URL)
+                .retrieve()
+                .bodyToMono(String.class)
+                .block(); // Blocking for simplicity; avoid in reactive applications
+    }
+
+    public String fetchYear() {
+        return webClient.get()
+                .uri(fipeApiConstants.GET_YEARS_URL)
+                .retrieve()
+                .bodyToMono(String.class)
+                .block(); // Blocking for simplicity; avoid in reactive applications
+    }
+
 }

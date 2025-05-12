@@ -1,0 +1,6 @@
+com/vm/ec/fipe/service/FipeService.class
+com/vm/ec/fipe/controller/getModels.class
+com/vm/ec/fipe/FipeApplication.class
+com/vm/ec/fipe/constants/fipeApiConstants.class
+com/vm/ec/fipe/controller/getYears.class
+com/vm/ec/fipe/controller/getBrands.class
